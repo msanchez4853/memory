@@ -1,0 +1,100 @@
+/* 
+    Document   : memoria
+    Created on : 18-jun-2014, 19:48:26
+    Author     : adrastea
+    Description:
+        Purpose of the stylesheet follows.
+*/
+section#navegacion{
+    height: 40px;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+body > .container {
+    padding: 60px 15px 0;
+}
+.container .text-muted {
+    margin: 20px 0;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #f5f5f5;
+}
+footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.mem_app_titulo{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+caption{
+    background-color: gray;
+    color:white;
+}
+
+img.casilla_tablero{
+    width:150px;
+    height:150px;
+}
+
+@media (min-width: 480px) {
+    
+    table#memoria_par_tablero img{
+        max-height: 90px !important;
+    }
+    
+    video{
+        width:400px !important;
+        height:300px !important;      
+    }
+}
+
+@media (min-width: 640px) {
+    table#memoria_par_tablero img{
+        max-height: 135px !important;
+    }
+    video{
+        width:580px !important;
+        height:400px !important;      
+    }
+}
+
+@media (min-width: 1024px) { 
+    table#memoria_par_tablero img{
+        max-height: 86px !important;
+    }
+     video{
+        width:550px !important;
+        height:400px !important;
+        
+    }
+}
+
+
+@media (min-width: 1200px) { 
+
+    table#memoria_par_tablero img{
+        max-height: 75px !important;
+    }
+    
+    video{
+        width:550px !important;
+        height:370px !important;
+        
+    }
+}

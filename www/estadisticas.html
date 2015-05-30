@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Memori@. Estadisticas</title>
+        <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="resources/bootstrap/css/bootstrap-theme.min.css"/>
+        <link rel="stylesheet" href="resources/css/memoria.css"/>
+        <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+   <![endif]-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="resources/js/menu.js"></script>
+        <script src="resources/js/estadisticas.js"></script>
+
+    </head>
+    <body>
+        <header></header>
+        <!--Inicio navegacion-->
+        <section id="navegacion">
+            <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+                <div class="container-fluid">
+                    <div class="row">         
+                        
+                        <button id="_acc_nav_atras" type="button" class="col-xs-1 col-md-2 icon-bar btn btn-default navbar-btn pull-left" ><span class="glyphicon glyphicon-chevron-left"></span>&nbsp;<span class="hidden-xs">Menu principal</span></button>                        
+                        <div style="display: inline-block" class=" col-xs-10 col-md-7 navbar-text  pull-left" >Memori@ | <span id="_acc_nav_usuario"> </span> </div>
+                        <button id="_acc_nav_logout" type="button" class="col-xs-1 col-md-2  btn btn-default navbar-btn pull-right "><span class="glyphicon glyphicon-remove"></span>&nbsp;<span class="hidden-xs">Teminar Partida</span></button>                                         
+                    </div>
+                </div>
+            </nav> 
+
+        </section>
+
+        <!--Fin navegacion-->
+        <section id="contenido">
+
+            <article>
+                <div class="container">
+                    <!-- Example row of columns -->
+                    <div class="row">
+                        <div class="col-xs-12 ">&nbsp;                     
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 ">
+                            <div class="panel panel-info">
+                                <div class="panel-heading">Estadisticas</div>
+                                <div class="panel-body">
+                                    <div class="row" >
+                                        <div class="col-xs-2 text-right bg-primary"> Usuario</div>
+                                        <div id="memoria_est_usuario" class="col-xs-2"> &nbsp; </div>
+                                        <div class="col-xs-2 text-right bg-primary"> Record</div>
+                                        <div id="memoria_est_record" class="col-xs-2"> &nbsp; </div>
+                                        <div class="col-xs-2 text-right bg-primary"> Nivel</div>
+                                        <div id="memoria_est_nivel" class="col-xs-2"> &nbsp; </div>
+                                    </div>
+                                </div>
+                                <table id="memoria_est_table" class="table table-hover">
+                                    <caption>Puntuaciones</caption>
+                                    <thead>
+                                    <tr><th>&nbsp;</th><th>Puntuacion</th><th>Nivel</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </article>      
+            <article>
+                <div id="_men_log"></div>
+            </article>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p class="text-muted">Memoria. Miguel Sanchez Roman.</p>
+            </div>
+        </footer>
+
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="resources/bootstrap/js/bootstrap.min.js"></script>
+
+    </body>
+</html>

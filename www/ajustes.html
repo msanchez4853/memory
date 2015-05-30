@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Memori@. Ajustes</title>
+        <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="resources/bootstrap/css/bootstrap-theme.min.css"/>
+        <link rel="stylesheet" href="resources/css/memoria.css"/>
+        <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+   <![endif]-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        <script src="resources/js/menu.js"></script>
+        <script src="resources/js/ajustes.js"></script>
+
+    </head>
+    <body>
+        <header></header>
+        <!--Inicio navegacion-->
+        <section id="navegacion">
+            <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+                <div class="container-fluid">
+                    <div class="row">         
+
+                        <button id="_acc_nav_atras" type="button" class="col-xs-1 col-md-2 icon-bar btn btn-default navbar-btn pull-left" ><span class="glyphicon glyphicon-chevron-left"></span>&nbsp;<span class="hidden-xs">Menu principal</span></button>                        
+                        <div style="display: inline-block" class=" col-xs-10 col-md-7 navbar-text  pull-left" >Memori@ | <span id="_acc_nav_usuario"> </span> </div>
+                        <button id="_acc_nav_logout" type="button" class="col-xs-1 col-md-2  btn btn-default navbar-btn pull-right "><span class="glyphicon glyphicon-remove"></span>&nbsp;<span class="hidden-xs">Teminar Partida</span></button>                                         
+                    </div>
+                </div>
+            </nav> 
+
+        </section>
+
+        <!--Fin navegacion-->
+        <section id="contenido">
+            <article>
+                <div class="container">
+                    <!-- Example row of columns -->
+                    <div class="row">
+                        <div class="col-xs-12 ">&nbsp;                     
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 ">
+                            <div class="panel panel-info">
+                                <div class="panel-heading">Ajustes</div>
+                                <div class="panel-body">
+                                    <div class="row" >
+                                        <div class="col-sm-12 col-xs-12 col-md-12">
+                                            <div class="thumbnail center-block btn-toolbar row" role="toolbar">                                        
+                                                <!--<div class="clearfix visble-lg"></div>-->
+                                                <div class="col-xs-4 col-xs-offset-4" >
+                                                    <button id="_acc_btn_tomar_img" class="btn btn-default">&nbsp;<span class="glyphicon glyphicon-camera"></span></button>  
+                                      
+                                                     <button id="_acc_btn_anadir_img" class="btn btn-default">&nbsp;<span class="glyphicon glyphicon glyphicon-folder-open"></span></button> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="_memoria_ver_carrusel" class="row">
+                                        <div class="col-sm-12 col-xs-12 col-md-7 col-md-offset-2 col-lg-6 col-lg-offset-3">
+                                            <div id="carousel-list-imagenes" class="carousel slide" data-ride="carousel">
+                                                <ol id="list_imagenes_indicators" class="carousel-indicators">
+
+                                                </ol>
+                                                <div id="list_imagenes" class="carousel-inner">
+
+                                                </div>
+                                                <a class="left carousel-control" href="#carousel-list-imagenes" data-slide="prev">
+                                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                                </a>
+                                                <a class="right carousel-control" href="#carousel-list-imagenes" data-slide="next">
+                                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="_memoria_ver_carrusel_no_img" class="bg-danger"> No hay imagenes que mostrar</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </article>
+
+            <article>
+                <div id="_men_log"></div>
+            </article>
+        </section>
+        <section>
+            <article>
+                
+                <div class="container">
+                    <!-- Example row of columns -->                    
+                    <div id="memoria_img_anadir_modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-keyboard="false">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body row"> 
+                                    <form id="memoria_img_anadir_form" role="form">
+                                        <div>
+                                            <div class="form-group">
+                                                <input type="file" id="memoria_img_cap_file">
+                                            </div>
+                                        </div>                                        
+                                    </form>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>   
+            </article>
+            <article>
+                <div class="container">
+                    <!-- Example row of columns -->                    
+                    <div id="memoria_img_cap_modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-keyboard="false">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body row"> 
+                                    <form id="memoria_img_cap_form" role="form">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <img id="memoria_img_capturada" class="center-block img-responsive" alt="Imagen Seleccionada" src=""/>
+                                            </div>
+                                        </div>                                        
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button"  id="memoria_ac_btn_limpiar"  class="btn 
+                                            btn-default">Cancelar</button>
+                                    <button type="button"  id="memoria_ac_btn_guardar"  class="btn btn-primary" 
+                                            ><span class="glyphicon 
+                                           glyphicon-floppy-disk"></span>&nbsp;Guardar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>                    
+
+            </article>
+
+            <article>
+                <div class="container">
+                    <!-- Example row of columns -->                    
+                    <div id="memoria_img_foto_modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-keyboard="false">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body row"> 
+                                    <form id="memoria_img_foto_form" role="form">
+                                        <div>
+                                            <div class="form-group">
+                                                <video id="ft_video" autoplay></video>     
+                                                <canvas id='ft_canvas' hidden> </canvas>
+                                            </div>
+                                        </div>                                        
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button"  id="memoria_ac_btn_limpiar_foto"  class="btn 
+                                            btn-default">Cancelar</button>
+                                    <button type="button"  id="memoria_ac_btn_guardar_foto"  class="btn btn-primary" 
+                                            ><span class="glyphicon 
+                                           glyphicon-camera"></span>&nbsp;Tomar Foto</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>                    
+
+            </article>
+        </section>
+        <footer>
+            <div class="container">
+                <p class="text-muted">Memoria. Miguel Sanchez Roman.</p>
+            </div>
+        </footer>
+
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="resources/bootstrap/js/bootstrap.min.js"></script>
+
+    </body>
+</html>
