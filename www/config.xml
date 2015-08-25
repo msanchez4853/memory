@@ -24,8 +24,7 @@
   <preference name="BackupWebStorage" value="cloud" />
   <preference name="LoadUrlTimeoutValue" value="20000" />
   <preference name="UIWebViewDecelerationSpeed" value="normal" />
-  <icon src="/icons/default.png" />
-  <icon src="/res/screen/android/screen-ldpi-portrait.png" gap:platform="android" gap:qualifier="ldpi" />
+  <icon src="/img/default.png" />
   <feature name="http://api.phonegap.com/1.0/camera" />
   <feature name="http://api.phonegap.com/1.0/file" />
   <feature name="http://api.phonegap.com/1.0/geolocation" />
