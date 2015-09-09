@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns:gap="http://phonegap.com/ns/1.0" xmls="http://www.w3.org.ns/widgets" id="uned.phonegap.example" version="1.0.0">
   <preference name="orientation" value="default" />
-  <content>mobile.html?ale=0.6869421142841043&lab_id=asdfasdfasdf</content>
+  <content>mobile.html?lab_id=asdfasdfasdf</content>
   <preference name="phonegap-version" value="3.6.3" />
   <name>Prueba 2</name>
   <gap:platform name="winphone" />
